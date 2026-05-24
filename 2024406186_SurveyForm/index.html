@@ -1,105 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Survey Form</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      text-align: center;
-    }
-
-    form {
-      background: white;
-      max-width: 500px;
-      margin: auto;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: left;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      margin: 8px 0;
-      padding: 8px;
-    }
-
-    button {
-      width: 100%;
-      padding: 10px;
-      background: purple;
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse Fitness Survey</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-  
-  <h1 id="title">BTS Concert Survey</h1>
-
-  
-  <p id="description">Tell us about your BTS concert experience and preferences 💜</p>
-
-  
-  <form id="survey-form">
-
-    
-    <label id="name-label">Name:</label>
-    <input 
-      type="text" 
-      id="name" 
-      placeholder="Enter your name" 
-      required>
-
-    
-    <label id="email-label">Email:</label>
-    <input 
-      type="email" 
-      id="email" 
-      placeholder="Enter your email" 
-      required>
-
-    
-    <label id="number-label">Age:</label>
-    <input 
-      type="number" 
-      id="number" 
-      min="10" 
-      max="60" 
-      placeholder="Enter your age">
-
-    
-    <label>Which concert will you attend?</label>
-    <select id="dropdown">
-      <option value="">Select an option</option>
-      <option value="kl">Kuala Lumpur</option>
-      <option value="tokyo">Tokyo</option>
-    </select>
-
-    
-    <p>Have you attended a BTS concert before?</p>
-    <input type="radio" name="experience" value="yes"> Yes<br>
-    <input type="radio" name="experience" value="no"> No<br>
-
-    
-    <p>What do you look forward to? (Select all)</p>
-    <input type="checkbox" value="music"> Live Music<br>
-    <input type="checkbox" value="dance"> Dance Performance<br>
-    <input type="checkbox" value="fans"> Meeting ARMY<br>
-
-    
-    <p>Additional Comments:</p>
-    <textarea rows="4" placeholder="Write your comments here..."></textarea>
-
-  
-    <button id="submit" type="submit">Submit</button>
-
-  </form>
-
+    <div class="container">
+        <header>
+            <h1 id="title">Fitness Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve your workout experience</p>
+        </header>
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            
+            <div class="form-group">
+                <label id="number-label" for="number">Age (optional)</label>
+                <input type="number" id="number" min="10" max="99" placeholder="Age">
+            </div>
+            
+            <div class="form-group">
+                <p>Which option best describes your current fitness level?</p>
+                <select id="dropdown" required>
+                    <option disabled selected value="">Select fitness level</option>
+                    <option value="beginner">Beginner (Just starting out)</option>
+                    <option value="intermediate">Intermediate (Exercise regularly)</option>
+                    <option value="advanced">Advanced (Fitness enthusiast/Athlete)</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <p>Would you recommend Pulse Fitness to a friend?</p>
+                <label class="radio-label">
+                    <input type="radio" name="recommend" value="definitely" checked> Definitely
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="recommend" value="maybe"> Maybe
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="recommend" value="not-sure"> Not sure
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <p>What is your favorite type of workout?</p>
+                <select id="favorite-feature" required>
+                    <option disabled selected value="">Select an option</option>
+                    <option value="cardio">Cardio & Running</option>
+                    <option value="weights">Weight Lifting & Strength</option>
+                    <option value="yoga">Yoga & Flexibility</option>
+                    <option value="hiit">HIIT Circuits</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <p>What goals would you like to focus on next? (Check all that apply)</p>
+                <div class="checkbox-grid">
+                    <label><input type="checkbox" name="goals" value="weight-loss"> Weight Loss</label>
+                    <label><input type="checkbox" name="goals" value="muscle-gain"> Muscle Gain</label>
+                    <label><input type="checkbox" name="goals" value="endurance"> Endurance</label>
+                    <label><input type="checkbox" name="goals" value="flexibility"> Flexibility</label>
+                    <label><input type="checkbox" name="goals" value="mental-health"> Stress Relief</label>
+                    <label><input type="checkbox" name="goals" value="nutrition"> Better Nutrition</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
