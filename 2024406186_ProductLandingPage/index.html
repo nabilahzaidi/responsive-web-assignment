@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="header">
+        <img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR0Vc94RC5Uufllrulz7Ud18jbX8gEmmezoQ&s" alt="Logo">
+        
+        <nav id="nav-bar">
+            <a class="nav-link" href="#hero">Home</a>
+            <a class="nav-link" href="#video-section">Demo</a>
+            <a class="nav-link" href="#pricing">Plans</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Design anything. Bring your ideas to life.</h1>
+        <p>Sign up with your email to get latest product updates.</p>
+        
+        <form id="form" action="https://www.freecodecamp.org/email-submit">
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <input type="submit" id="submit" value="Get Started">
+        </form>
+    </section>
+
+    <section id="video-section">
+        <iframe id="video" src="https://www.youtube.com/embed/_MPlx02K39o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="pricing">
+        <div class="pricing-container">
+            
+            <div class="card">
+                <p class="user-tier">Individuals</p>
+                <h3>Free</h3>
+                <p class="desc">Design anything. No cost, just creativity.</p>
+                <div class="price">RM0 <span class="period">/ year</span></div>
+                <button class="btn button-purple">Get started</button>
+                <ul class="features">
+                    <li>✓ Easy drag-and-drop editor</li>
+                    <li>✓ 1.6M+ free templates</li>
+                    <li>✓ 4.7M+ photos & graphics</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <p class="user-tier">Individuals ⭐</p>
+                <h3>Pro</h3>
+                <p class="desc">Unlock premium content and AI features.</p>
+                <div class="price">RM250 <span class="period">/ year</span></div>
+                <button class="btn button-purple">Start free trial</button>
+                <ul class="features">
+                    <li>✓ Premium magic tools</li>
+                    <li>✓ 3.6M+ premium templates</li>
+                    <li>✓ 141M+ premium media stock</li>
+                </ul>
+            </div>
+
+            <div class="card recommended">
+                <span class="badge">Recommended</span>
+                <p class="user-tier">Individuals and teams ⭐</p>
+                <h3>Business</h3>
+                <p class="desc">Market smarter and grow your business.</p>
+                <div class="price">RM420 <span class="period">/ year</span></div>
+                <button class="btn button-purple">Start free trial</button>
+                <ul class="features">
+                    <li>✓ Team collaboration tools</li>
+                    <li>✓ 100 Brand Kits & approvals</li>
+                    <li>✓ Premium dedicated support</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
