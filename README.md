@@ -63,4 +63,16 @@ Folder:
 - CSS3
 - Responsive Web Design
 
-## Repository Structure
+## Version Control
+
+GitHub is used to manage the project repository and track development progress through commits.
+
+Multiple commits were made during development to maintain code organization and version history.
+
+## Certification
+
+FreeCodeCamp Responsive Web Design Certification
+
+## Conclusion
+
+This project improved my understanding of responsive web development using HTML and CSS. It also enhanced my skills in organizing projects, managing code using GitHub, and developing user-friendly web interfaces.
